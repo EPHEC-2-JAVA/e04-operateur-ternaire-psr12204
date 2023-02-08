@@ -1,5 +1,4 @@
 package be.ephec.java.exercice.e04;
-
 import java.util.Random;
 
 public class Game {
@@ -17,7 +16,6 @@ public class Game {
         while (p1.getPoints() < maxPoints && p2.getPoints() < maxPoints) {
             playNextRound();
         }
-
         return (p1.getPoints() > p2.getPoints()) ? p1 : p2;
     }
 
@@ -36,5 +34,4 @@ public class Game {
     private int rollDice() {
         return dice.nextInt(6);
     }
-
 }
